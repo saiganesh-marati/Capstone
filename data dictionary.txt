@@ -1,0 +1,95 @@
+attack_type--->[categorie of attack_type] [severity]
+--------------------------
+1.smurf-->[dos][high]  1 1 101
+2.neptune -->[dos][high] 2  1 101
+4.back --->[dos][high]   4  1 101
+9.teardrop--->[dos][high] 9 1 101
+10.pod-->[dos][high]    10 1 101
+
+
+3.normal--->[normal][normal] 3 4 104
+
+5.satan ---->[probe][high]   5 2 102
+7.portsweep---->[probe][medium]7 2 102
+8.ipsweep-->[probe][medium]  8 2 102
+
+6.warezclient--->[R2L][low] 6 3 103
+11.guess_passwd--->[R2L][low] 11 3 103
+12.imap--->[R2L][medium] 12 3 102
+-------------------------------------
+protocol_type
+-----------------------
+#1.icmp
+#2.tcp
+#3.udp
+-------------
+flag
+-----------------
+
+#1.sf
+#2.s0
+#3.REJ
+#4.RSTR
+#5.RSTO
+
+---------------------------
+service
+---------------
+1.ecr_i
+2.private
+3.http
+4.smtp
+5.other
+6.ftp_data
+7.domain_u
+8.ftp
+9.eco_i
+10.telnet
+11.auth
+12.urp_i
+13.ntp_u
+14.finger
+15.discard
+16.Z39_50
+17.echo
+18.whois
+19.nntp
+20.remote_job
+21.uucp
+22.shell
+23.domain
+24.http_443
+25.imap4
+26.exec
+27.ctf
+28.time
+29.sunrpc
+30.klogin
+31.kshell
+32.netbios_ns
+33.hostnames
+34.pm_dump
+35.nnsp
+36.supdup
+37.login
+38.IRC
+39.sql_net
+40.vmnet
+41.ldap
+42.iso_tsap
+----------------------------------
+severity
+----
+1.high
+2.medium
+3.low
+4.normal
+
+
+---------
+recommendation 
+---------
+101-->dos 
+102-->probe
+103-->r2l
+104-->normal

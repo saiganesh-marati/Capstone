@@ -1,0 +1,15 @@
+{
+    
+        "builds": [{
+        "src": "Attack_Prediction/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdasize": "15mb", "runtime": "python3.7" }
+        }],
+
+        "routes": [
+        {
+        "src": "/(.*))",
+        "dest": "Attack_Prediction/wsgi.py"
+        }
+    ]
+}
